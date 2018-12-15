@@ -1,0 +1,151 @@
+object GraffitiForm: TGraffitiForm
+  Left = 0
+  Top = 0
+  BorderIcons = [biSystemMenu]
+  BorderStyle = bsDialog
+  Caption = #1043#1088#1072#1092#1092#1080#1090#1080
+  ClientHeight = 426
+  ClientWidth = 538
+  Color = clBtnFace
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -11
+  Font.Name = 'Tahoma'
+  Font.Style = []
+  OldCreateOrder = False
+  OnCreate = FormCreate
+  PixelsPerInch = 96
+  TextHeight = 13
+  object Panel1: TPanel
+    Left = 0
+    Top = 0
+    Width = 538
+    Height = 37
+    Align = alTop
+    AutoSize = True
+    Caption = 'Panel1'
+    ShowCaption = False
+    TabOrder = 0
+    ExplicitWidth = 528
+    object Button1: TButton
+      Left = 0
+      Top = 1
+      Width = 90
+      Height = 35
+      Caption = #1054#1095#1080#1089#1090#1080#1090#1100
+      TabOrder = 0
+      OnClick = Button1Click
+    end
+    object Button2: TButton
+      Left = 441
+      Top = 1
+      Width = 87
+      Height = 35
+      Caption = #1054#1090#1087#1088#1072#1074#1080#1090#1100
+      TabOrder = 1
+    end
+    object TrackBar1: TTrackBar
+      Left = 276
+      Top = 5
+      Width = 150
+      Height = 26
+      Max = 255
+      Min = 1
+      Position = 255
+      TabOrder = 2
+      OnChange = TrackBar1Change
+    end
+  end
+  object Panel2: TPanel
+    Left = 0
+    Top = 37
+    Width = 538
+    Height = 317
+    Align = alClient
+    Caption = 'Panel2'
+    ShowCaption = False
+    TabOrder = 1
+    ExplicitWidth = 528
+    ExplicitHeight = 307
+    object Image1: TImage
+      Left = 1
+      Top = 1
+      Width = 536
+      Height = 315
+      Align = alClient
+      ExplicitLeft = 2
+      ExplicitWidth = 526
+      ExplicitHeight = 305
+    end
+  end
+  object Panel3: TPanel
+    Left = 0
+    Top = 354
+    Width = 538
+    Height = 72
+    Align = alBottom
+    TabOrder = 2
+    ExplicitTop = 344
+    ExplicitWidth = 528
+    object Shape1: TShape
+      Left = 1
+      Top = 1
+      Width = 64
+      Height = 64
+      Pen.Mode = pmBlack
+      Shape = stCircle
+    end
+    object TrackBar2: TTrackBar
+      Left = 140
+      Top = 28
+      Width = 149
+      Height = 29
+      TabOrder = 0
+      OnChange = TrackBar2Change
+    end
+    object StaticText1: TStaticText
+      Left = 141
+      Top = 5
+      Width = 48
+      Height = 17
+      Caption = #1064#1080#1088#1080#1085#1072':'
+      TabOrder = 1
+    end
+    object Panel5: TPanel
+      Left = 80
+      Top = 8
+      Width = 41
+      Height = 41
+      Caption = 'Panel5'
+      TabOrder = 2
+      object SpeedButton1: TSpeedButton
+        Left = 1
+        Top = 1
+        Width = 39
+        Height = 39
+        Align = alClient
+        Font.Charset = DEFAULT_CHARSET
+        Font.Color = clBlack
+        Font.Height = -11
+        Font.Name = 'Tahoma'
+        Font.Style = []
+        ParentFont = False
+        OnClick = SpeedButton1Click
+        ExplicitLeft = -7
+        ExplicitTop = -2
+        ExplicitWidth = 37
+      end
+    end
+  end
+  object Panel4: TPanel
+    Left = 95
+    Top = 208
+    Width = 185
+    Height = 145
+    BorderStyle = bsSingle
+    Color = clBackground
+    ParentBackground = False
+    ShowCaption = False
+    TabOrder = 3
+  end
+end
